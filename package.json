@@ -1,0 +1,11 @@
+{
+  "name": "redux-isomorphic-asynchronous-sample",
+  "version": "1.0.0",
+  "description": "redux isomorphic asynchronous sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "srd7",
+  "license": "MIT"
+}
