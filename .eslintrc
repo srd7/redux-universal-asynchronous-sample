@@ -1,0 +1,44 @@
+# 最近の事情をあまり追いかけていないので、
+# 間違った記法があるかも。
+# 動いているのでよしとしている。
+
+# デフォルトではすべてオフなので、推奨設定を上書きする。
+extends: ["eslint:recommended", "plugin:react/recommended"]
+rules:
+  # インデントを2で固定
+  indent: [2, 2, "SwitchCase": 1]
+  # ダブルクオーテーションに固定
+  quotes: [2, "double"]
+  # 改行は LF
+  linebreak-style: [2, "unix"]
+  # 常にセミコロンを求める
+  semi: [2, "always"]
+  # 未使用の変数は warning
+  no-unused-vars:
+    - 1
+    - vars: "all"
+      args: "all"
+      varsIgnorePattern: "^React$"
+      argsIgnorePattern: "^_"
+  # 宣言してない変数の使用禁止
+  no-undef: 2
+  # console.log は 許容
+  no-console: 0
+  # 比較は === を使う
+  eqeqeq: 2
+  # オブジェクトや配列の最後のコンマの処理
+  # 複数行の場合は必須とする
+  "comma-dangle": [1, "always-multiline"]
+env:
+  es6: true
+  node: true
+  browser: true
+// ES2016 を使えるように
+parser: "babel-eslint"
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+    experimentalObjectRestSpread: true
+    # import を使う
+    modules: true
+plugins: ["react"]
