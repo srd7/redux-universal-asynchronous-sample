@@ -41,5 +41,13 @@
     "webpack": "^1.13.3",
     "webpack-dev-middleware": "^1.8.4",
     "webpack-hot-middleware": "^2.13.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srd7/redux-universal-asynchronous-sample.git"
+  },
+  "bugs": {
+    "url": "https://github.com/srd7/redux-universal-asynchronous-sample/issues"
+  },
+  "homepage": "https://github.com/srd7/redux-universal-asynchronous-sample#readme"
 }
